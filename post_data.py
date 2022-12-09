@@ -39,6 +39,7 @@ post_data = [
 # Your Code Start from here
 
 for post in post_data:
+    post_title =post.get('title')
     post['slug'] = post['title'].replace(' ','-')
 print(post_data)
 
