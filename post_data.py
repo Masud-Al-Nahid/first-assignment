@@ -38,12 +38,8 @@ post_data = [
 
 # Your Code Start from here
 
+for post in post_data:
+    post['slug'] = post['title'].replace(' ','-')
+print(post_data)
 
-for x in post_data:
-    post_title =x.get('title')
-    post_slug =post_title.strip().replace(' ', '-')
-
-    x.update({'slug':'post_slug'}) #ভাই স্লাগের ভ্যালু  এড করতে পারলাম না অনেকবার ট্রাই করেছি ।
-    print(x)
-# Your code ends here
 

@@ -11,15 +11,24 @@ mobile_data = {
     'exchnage_rate': 103.25
 }
 
-#  Your Code Starts from here
 
-list_data = mobile_data['data']
+masud = mobile_data['data'][0]['price'] #* mobile_data['exchnage_rate'] 
+print(masud)
 
-for x in list_data:
-    phone_model = x.get('name')
-    phone_price =x.get('price')
-    phone_made = x.get('made')
-    sentence = f'{phone_model} is made in {phone_made}. The price is {phone_price} USD which is almost equal to 30975 BDT'
-    print(sentence)
+
+
+
+# first = float(mobile_data['exchnage_rate'])*mobile_data.get('data').get('price')
+# print(first)
+
+
+# list_data = mobile_data['data']
+
+# for x in list_data:
+#     phone_model = x.get('name')
+#     phone_price =x.get('price')
+#     phone_made = x.get('made')
+#     sentence = f'{phone_model} is made in {phone_made}. The price is {phone_price} USD which is almost equal to {get_price_with_exchange_rate(data)} BDT'
+#     print(sentence)
 
 #ভাই অনেক বার ট্রাই করে ও কারেন্সী কনভার্ট করতে পারি নাই 
